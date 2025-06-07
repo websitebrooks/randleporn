@@ -8,6 +8,36 @@
             width: 33.3%;
             margin: auto;
           }
+          .grid{
+            display: grid;
+            margin: auto;
+            width: 90%;
+            height: 100%;
+            grid-template-columns: 3fr 4fr;
+            grid-template-areas: 
+            'one one one'
+            'three two two'
+            'three two two'
+            'three four four';
+          }
+          .grid > div.one{
+            grid-area: one;
+          }
+          .grid > div.two{
+            grid-area: two;
+          }
+          .grid > div.three{
+            grid-area: three;
+          }
+          .grid > div.four{
+            grid-area: four;
+          }
+          .grid > div{
+            height: 100%;
+            width: 100%;
+            
+            border: 1px solid yellow;
+          }
         </style>
     </head>
     <body>
@@ -25,10 +55,19 @@
             <h1 style="font-family: Arial, Helvetica, sans-serif;">B.A.H CORP</h1>
             
             <p>my small business!!!</p>
-            <img src="assets/images/baldhead.jpg" style=""alt="randle" height="600">
-            <div>
-                <div class="tricolumn">
-
+            
+            <div class="grid">
+                <div class="one" style="background-image: url(assets/images/clawworld.jpg); background-size:50vw 25vh ;background-repeat:no-repeat  ;">
+                    <!-- <img src="assets/images/scooter.webp" alt="" style="height: 100%; width: 100%;"> -->
+                </div>
+                <div class="two" style="background-image: url(assets/images/baldhead.jpg); background-size:cover ;background-repeat:no-repeat  ;">
+                    
+                </div>
+                <div class="three" style="background-image: url(assets/images/torahtower.jpg); background-size:cover ;background-repeat:no-repeat  ;">
+                    <!-- <img src="assets/images/claw.webp" alt="" style="height: 100%; width: 100%;" > -->
+                </div>
+                <div class="four" style="background-image: url(assets/images/theoffender.jpg); background-size:27vw 28vh ;background-repeat:no-repeat  ;">
+                    <!-- <img src="assets/images/claw.webp" alt="" style="height: 100%; width: 100%;" > -->
                 </div>
             </div>
         </div class="main">
